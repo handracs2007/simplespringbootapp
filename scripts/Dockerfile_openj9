@@ -1,0 +1,4 @@
+FROM adoptopenjdk:11-jre-openj9
+RUN mkdir /opt/app
+COPY simplespringbootapp-0.0.1-SNAPSHOT.jar /opt/app/myapp.jar
+CMD ["java", "-jar", "/opt/app/myapp.jar"]
